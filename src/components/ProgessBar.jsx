@@ -5,8 +5,8 @@ const ProgessBar = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setValue((v) => (v >= 100 ? 0 : v + 10));
-    }, 500);
+      setValue((v) => (v > 110 ? 0 : v + 1));
+    }, 50);
     return () => clearInterval(interval);
   }, []);
   return (
