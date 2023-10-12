@@ -3,3 +3,19 @@
     font-weight: normal;
     transition: all 0.3s;
 }
+.profile-photo{
+  background:url("../src/assets/Profile1.jpg") no-repeat;
+  background-position-x:55vw;
+  background-position-y: -11vh;
+  background-position-y: -11vh;
+  background-size: 50vh ;
+}
+
+
+@media screen and (max-width: 480px) {
+  .profile-photo{
+    background-position-y: -20vh;
+    background-position-x:center;
+    
+  }
+}
