@@ -1,12 +1,15 @@
 import { React, useEffect, useState } from "react";
 import "./App.css";
 
-import LandingPage from "./Pages/LandingPage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 function App() {
   return (
-    <>
-      <LandingPage></LandingPage>
-    </>
+    <></>
+    // <Routes>
+    //   <Route path="/" element={}></Route>
+    //   <Route path="/home" element={}></Route>
+    // </Routes>
   );
 }
 export default App;
