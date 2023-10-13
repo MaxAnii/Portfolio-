@@ -1,16 +1,40 @@
 .fname{
+  font-family: 'Zeyada', cursive;
+    font-weight: bold;
+
+}
+.about{
+  color: #ff5d56;
   font-family: 'Berkshire Swash', cursive;
-    font-weight: normal;
-    transition: all 0.3s;
+  font-weight: bold;
+  font-size: 30px;
 }
 .profile-photo{
   background:url("../src/assets/Profile1.jpg") no-repeat;
   background-position-x:55vw;
   background-position-y: -11vh;
-  background-position-y: -11vh;
+ 
   background-size: 50vh ;
 }
 
+#ABOUT{
+  background-color: #292929;
+}
+
+.material-symbols-outlined {
+  color: #ff5d56;
+  font-size: xx-large;
+  padding-top: 20px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24,
+  
+}
+ /* span {
+  margin-left: 2px;
+} */
 
 @media screen and (max-width: 480px) {
   .profile-photo{

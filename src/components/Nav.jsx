@@ -38,15 +38,18 @@ const Nav = () => {
       }}
     >
       <NavbarContent>
-        <NavbarBrand>
+        <NavbarBrand className="text-left">
           {/* <AcmeLogo /> */}
-          <h1 className=" text-inherit ">
-            <span className="text-[#ff5d56] fname text-2xl">ANSAR</span>
+          <h1 className="pt-[3vh]">
+            <span className="text-[#ff5d56] fname text-[34px] md:text-[48px]">
+              ANSAR{" "}
+            </span>
+            <span className=" fname text-[34px] md:text-[48px]">UL HAQ</span>
           </h1>
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden sm:flex gap-4 pl-20" justify="center">
         <NavbarItem isActive>
           <Link color="foreground" href="#HOME">
             Home
