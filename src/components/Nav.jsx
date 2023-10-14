@@ -15,7 +15,15 @@ import {
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = ["HOME", "ABOUT", "RESUME", "PROJECTS", "CONTACT"];
+  const menuItems = [
+    "HOME",
+    "ABOUT",
+    "EDUCATION",
+    "SKILLS",
+    "PROJECTS",
+    "EXPERIENCE",
+    "CONTACT",
+  ];
 
   return (
     <Navbar
@@ -49,25 +57,38 @@ const Nav = () => {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4 pl-20" justify="center">
-        <NavbarItem isActive>
+      <NavbarContent
+        className="md:hidden hidden sm:flex gap-4 pl-20  lg:flex"
+        justify="center"
+      >
+        <NavbarItem isActive={true}>
           <Link color="foreground" href="#HOME">
-            Home
+            HOME
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link href="#ABOUT" color="foreground">
-            About
+            ABOUT
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#resume">
-            Resume
+          <Link color="foreground" href="#EDUCATION">
+            EDUCATION
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#projects">
-            Projects
+            SKILLS
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#contact">
+            PROJECTS
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#contact">
+            EXPERIENCE
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -78,7 +99,7 @@ const Nav = () => {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarMenuToggle
-          className="sm:hidden"
+          className="lg:hidden"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
       </NavbarContent>

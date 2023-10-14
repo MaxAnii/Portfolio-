@@ -7,15 +7,17 @@ const About = () => {
   return (
     <div>
       <div className="text-center">
-        <div className="text-center about">About Me</div>
+        <div className="text-center about md:text-5xl sm:text-3xl">
+          About Me
+        </div>
         <div className="pt-2">Professional Profile - There Is All About Me</div>
         <div className="text-[#ff5d56] text-7xl mt-[-35px] font-bold">
           . . . .
         </div>
       </div>
 
-      <div className="md:flex md:pl-[10vw] py-[9vh]">
-        <div className="md:w-[40vw] lg:w-auto">
+      <div className="md:flex md:pl-[10vw] pt-[9vh]">
+        <div className="">
           <Card className="py-4">
             <CardBody className="overflow-visible py-2">
               <Image
@@ -25,13 +27,9 @@ const About = () => {
               />
             </CardBody>
           </Card>
-
-          <div className="invisible md:visible lg:hidden">
-            <BasicInformation></BasicInformation>
-          </div>
         </div>
-        <div className=" md:pl-10 md:w-1/2 pl-3 mt-[-40vh] md:mt-0">
-          <h3 className="text-3xl text-center md:text-left p-3 md:p-0 w-auto">
+        <div className=" md:pl-10 md:w-1/2 pl-3 ">
+          <h3 className="text-3xl text-center md:text-left  md:p-0 w-auto">
             I'm Ansar Ul Haq
           </h3>
           <p className="pt-5 text-center md:text-left">
@@ -48,10 +46,13 @@ const About = () => {
             veniam incididunt dolore veniam aute cillum cillum esse est cillum
             exercitation nostrud.
           </p>
-          <div className=" lg:visible md:invisible">
+          <div className=" lg:block md:hidden ">
             <BasicInformation></BasicInformation>
           </div>
         </div>
+      </div>
+      <div className="hidden md:block lg:hidden md:pl-[10vw] pb-20 ">
+        <BasicInformation></BasicInformation>
       </div>
     </div>
   );
