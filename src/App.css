@@ -17,7 +17,7 @@
   background-size: 50vh ;
 }
 
-#ABOUT{
+#ABOUT,#SKILLS{
   background-color: #292929;
 }
 
@@ -35,7 +35,9 @@
  /* span {
   margin-left: 2px;
 } */
-
+.hide-scroll::-webkit-scrollbar{
+display: none;
+}
 @media screen and (max-width: 480px) {
   .profile-photo{
     background-position-y: -20vh;

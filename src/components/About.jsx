@@ -7,9 +7,7 @@ const About = () => {
   return (
     <div>
       <div className="text-center">
-        <div className="text-center about md:text-5xl sm:text-3xl">
-          About Me
-        </div>
+        <div className="text-center about md:text-5xl text-3xl">About Me</div>
         <div className="pt-2">Professional Profile - There Is All About Me</div>
         <div className="text-[#ff5d56] text-7xl mt-[-35px] font-bold">
           . . . .

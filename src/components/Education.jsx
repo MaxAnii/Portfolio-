@@ -4,7 +4,7 @@ const Education = () => {
   return (
     <div>
       <div className="text-center">
-        <div className="text-center about md:text-5xl sm:text-3xl">
+        <div className="text-center about md:text-5xl text-3xl">
           My Education
         </div>
         <div className="pt-2">

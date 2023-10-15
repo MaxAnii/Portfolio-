@@ -45,10 +45,10 @@ const Nav = () => {
         ],
       }}
     >
-      <NavbarContent>
+      <NavbarContent className="">
         <NavbarBrand className="text-left">
           {/* <AcmeLogo /> */}
-          <h1 className="pt-[3vh]">
+          <h1 className="pt-[1vh]">
             <span className="text-[#ff5d56] fname text-[34px] md:text-[48px]">
               ANSAR{" "}
             </span>
@@ -77,7 +77,7 @@ const Nav = () => {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#projects">
+          <Link color="foreground" href="#SKILLS">
             SKILLS
           </Link>
         </NavbarItem>

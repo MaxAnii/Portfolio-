@@ -4,6 +4,7 @@ import Nav from "../components/Nav";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Education from "../components/Education";
+import Skills from "../components/Skills";
 const Home = () => {
   return (
     <div>
@@ -17,7 +18,9 @@ const Home = () => {
       <section id="EDUCATION" className="pt-20 ">
         <Education></Education>
       </section>
-      <section></section>
+      <section id="SKILLS" className="pt-20 ">
+        <Skills></Skills>
+      </section>
     </div>
   );
 };
