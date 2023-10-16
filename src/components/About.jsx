@@ -15,10 +15,11 @@ const About = () => {
       </div>
 
       <div className="md:flex md:pl-[10vw] pt-[9vh]">
-        <div className="">
+        <div className="" data-aos="fade-right">
           <Card className="py-4">
             <CardBody className="overflow-visible py-2">
               <Image
+                isZoomed
                 alt="Card background"
                 className="object-cover rounded-xl w-full md:w-auto"
                 src={profile2}
@@ -26,7 +27,7 @@ const About = () => {
             </CardBody>
           </Card>
         </div>
-        <div className=" md:pl-10 md:w-1/2 pl-3 ">
+        <div className=" md:pl-10 md:w-1/2 pl-3">
           <h3 className="text-3xl text-center md:text-left  md:p-0 w-auto">
             I'm Ansar Ul Haq
           </h3>

@@ -15,7 +15,11 @@ const Education = () => {
         </div>
       </div>
       <div className="pt-[9vh] md:pl-[10vw] md:pr-[10vw]  p-5 lg:h-[830px]">
-        <div className="bg-white/60  border-none rounded-xl mb-10  min-w-[50vw] lg:max-w-[50vw] ">
+        <div
+          className="bg-white/60  border-none rounded-xl mb-10  min-w-[50vw] lg:max-w-[50vw] "
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
           <Card
             isBlurred
             className="border-none bg-background/60 dark:bg-default-100/50  "
@@ -30,7 +34,11 @@ const Education = () => {
             </CardBody>
           </Card>
         </div>
-        <div className="bg-white/60  border-none rounded-xl mb-10 min-w-[50vw] lg:max-w-[50vw] lg:float-right">
+        <div
+          className="bg-white/60  border-none rounded-xl mb-10 min-w-[50vw] lg:max-w-[50vw] lg:float-right"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+        >
           <Card
             isBlurred
             className="border-none bg-background/60 dark:bg-default-100/50  "
@@ -45,7 +53,11 @@ const Education = () => {
             </CardBody>
           </Card>
         </div>
-        <div className="bg-white/60  border-none rounded-xl lg:float-left min-w-[50vw] lg:max-w-[50vw]">
+        <div
+          className="bg-white/60  border-none rounded-xl lg:float-left min-w-[50vw] lg:max-w-[50vw]"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-center"
+        >
           <Card
             isBlurred
             className="border-none bg-background/60 dark:bg-default-100/50  "

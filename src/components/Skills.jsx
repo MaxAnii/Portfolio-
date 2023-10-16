@@ -99,7 +99,7 @@ const Skills = () => {
           Programing Language
         </div>
         <div className="md:pl-[10vw] pr-[10vw] pl-[5%]">
-          <div className="gap-2 grid grid-cols-4 md:grid-cols-6 lg:grid-cols-10 w-fit h-fit">
+          <div className="gap-2 grid grid-cols-3 md:grid-cols-6 lg:grid-cols-10 w-fit h-fit">
             {programingLanguage.map((item, index) => (
               <Card shadow="sm" key={index} isPressable p-2>
                 <CardBody className="overflow-visible p-0 bg-black/60 ">
@@ -123,7 +123,7 @@ const Skills = () => {
           Database
         </div>
         <div className="md:pl-[10vw] pr-[10vw] pl-[5%]">
-          <div className="gap-2 grid grid-cols-4 md:grid-cols-6 lg:grid-cols-10  w-fit h-fit">
+          <div className="gap-2 grid grid-cols-3 md:grid-cols-6 lg:grid-cols-10  w-fit h-fit">
             {database.map((item, index) => (
               <Card shadow="sm" key={index} isPressable p-2>
                 <CardBody className="overflow-visible p-0 bg-black/60 ">
@@ -146,7 +146,7 @@ const Skills = () => {
           Tools
         </div>
         <div className="md:pl-[10vw] pr-[10vw] pl-[5%]">
-          <div className="gap-2 grid grid-cols-4 md:grid-cols-6 lg:grid-cols-10  w-fit h-fit">
+          <div className="gap-2 grid grid-cols-3 md:grid-cols-6 lg:grid-cols-10  w-fit h-fit">
             {tools.map((item, index) => (
               <Card shadow="sm" key={index} isPressable p-2>
                 <CardBody className="overflow-visible p-0 bg-black/60 ">
@@ -158,8 +158,8 @@ const Skills = () => {
                     src={item.img}
                   />
                 </CardBody>
-                <CardFooter className="text-small ">
-                  <b className="text-center">{item.title}</b>
+                <CardFooter className="text-sm ">
+                  <b className="md:text-center">{item.title}</b>
                 </CardFooter>
               </Card>
             ))}
@@ -169,7 +169,7 @@ const Skills = () => {
           FrameWork
         </div>
         <div className="md:pl-[10vw] pr-[10vw] pl-[5%]">
-          <div className="gap-2 grid grid-cols-4 md:grid-cols-6 lg:grid-cols-10  w-fit h-fit">
+          <div className="gap-2 grid grid-cols-3 md:grid-cols-6 lg:grid-cols-10  w-fit h-fit">
             {framework.map((item, index) => (
               <Card shadow="sm" key={index} isPressable p-2>
                 <CardBody className="overflow-visible p-0 bg-black/60 ">
@@ -192,7 +192,7 @@ const Skills = () => {
           Libraries
         </div>
         <div className="md:pl-[10vw] pr-[10vw] pl-[5%]">
-          <div className="gap-2 grid grid-cols-4 md:grid-cols-6 lg:grid-cols-10  w-fit h-fit">
+          <div className="gap-2 grid grid-cols-3 md:grid-cols-6 lg:grid-cols-10  w-fit h-fit">
             {libraries.map((item, index) => (
               <Card shadow="sm" key={index} isPressable p-2>
                 <CardBody className="overflow-visible p-0 bg-black/60 ">

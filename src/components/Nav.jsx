@@ -82,18 +82,18 @@ const Nav = () => {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#contact">
+          <Link color="foreground" href="#PROJECTS">
             PROJECTS
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#contact">
+          <Link color="foreground" href="#EXPERIENCE">
             EXPERIENCE
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#contact">
-            Contact
+          <Link color="foreground" href="#CONTACT">
+            CONTACT
           </Link>
         </NavbarItem>
       </NavbarContent>
