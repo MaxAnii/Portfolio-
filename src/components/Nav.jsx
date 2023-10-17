@@ -58,7 +58,7 @@ const Nav = () => {
       </NavbarContent>
 
       <NavbarContent
-        className="md:hidden hidden sm:flex gap-4 pl-20  lg:flex"
+        className="md:hidden hidden  gap-4 pl-20  lg:flex"
         justify="center"
       >
         <NavbarItem isActive={true}>
@@ -106,7 +106,7 @@ const Nav = () => {
       <NavbarMenu className="bg-dark text-white">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="w-full text-dark" href={"#" + item} size="lg">
+            <Link className="w-full text-dark" href={"#" + item} size="md">
               {item}
             </Link>
           </NavbarMenuItem>

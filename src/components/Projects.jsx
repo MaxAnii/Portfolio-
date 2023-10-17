@@ -63,7 +63,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="  md:pl-[10vw] md:pr-[10vw] pt-[9vh] p-5 lg:h-[73vh]">
+      <div className="  md:pl-[10vw] md:pr-[10vw] lg:pt-[9vh] md:p-5 lg:overflow-hidden ">
         <div className="md:pt-[10vh] lg:pt-0 lg:float-right lg:pl-5 pl-3 pt-5">
           <div className="" data-aos="zoom-in">
             <Image
