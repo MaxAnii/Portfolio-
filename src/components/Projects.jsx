@@ -1,7 +1,7 @@
 import React from "react";
 import { Image } from "@nextui-org/react";
 import shareexpense from "../assets/languageLogo/shareexpense.png";
-import projectmanager from "../assets/languageLogo/projectmanager.png";
+import projectmanager from "../assets/languageLogo/projectManager2.png";
 import { Link } from "react-router-dom";
 const Projects = () => {
   return (
@@ -28,18 +28,12 @@ const Projects = () => {
             Share Expense
           </h3>
           <p className="pt-5 text-center md:text-left ">
-            Et laboris sit labore aliqua sit est deserunt occaecat eiusmod minim
-            cillum minim. Deserunt voluptate laboris veniam incididunt dolore
-            veniam aute cillum cillum esse est cillum exercitation nostrud.
-            Nostrud nulla culpa consectetur ad do esse quis id cillum
-            deserunt.Reprehenderit mollit occaecat ullamco excepteur ea ad. Ad
-            excepteur culpa elit culpa tempor culpa consequat Lorem dolor. Lorem
-            ipsum dolor enim qui elit et laboris sit fugiat sunt. Aute fugiat
-            dolore labore incididunt reprehenderit nostrud consequat qui ad
-            minim ad esse ut. Et laboris sit labore aliqua sit est deserunt
-            occaecat eiusmod minim cillum minim. Deserunt voluptate laboris
-            veniam incididunt dolore veniam aute cillum cillum esse est cillum
-            exercitation nostrud.
+            <b>Technologies :</b> React JS, Bootstrap, Node JS, PostgreSQL,
+            Express, Passport JS.<br></br> Empower your group's financial
+            management with our website's interactive landing page. Create
+            shared rooms, invite members, and seamlessly track expenses by
+            creating and managing notes, ensuring transparency and ease in
+            expense tracking.
           </p>
           <div className="flex justify-center gap-10 pt-5">
             <div>
@@ -64,7 +58,7 @@ const Projects = () => {
         </div>
       </div>
       <div className="  md:pl-[10vw] md:pr-[10vw] lg:pt-[9vh] md:p-5 lg:overflow-hidden ">
-        <div className="md:pt-[10vh] lg:pt-0 lg:float-right lg:pl-5 pl-3 pt-5">
+        <div className="md:pt-[10vh] lg:pt-0 lg:float-right lg:pl-5 px-3 pt-5">
           <div className="" data-aos="zoom-in">
             <Image
               isBlurred
@@ -78,18 +72,13 @@ const Projects = () => {
             Project Manager
           </h3>
           <p className="pt-5 text-center md:text-left lg:text-lg">
-            Et laboris sit labore aliqua sit est deserunt occaecat eiusmod minim
-            cillum minim. Deserunt voluptate laboris veniam incididunt dolore
-            veniam aute cillum cillum esse est cillum exercitation nostrud.
-            Nostrud nulla culpa consectetur ad do esse quis id cillum
-            deserunt.Reprehenderit mollit occaecat ullamco excepteur ea ad. Ad
-            excepteur culpa elit culpa tempor culpa consequat Lorem dolor. Lorem
-            ipsum dolor enim qui elit et laboris sit fugiat sunt. Aute fugiat
-            dolore labore incididunt reprehenderit nostrud consequat qui ad
-            minim ad esse ut. Et laboris sit labore aliqua sit est deserunt
-            occaecat eiusmod minim cillum minim. Deserunt voluptate laboris
-            veniam incididunt dolore veniam aute cillum cillum esse est cillum
-            exercitation nostrud.
+            <b> Technologies :</b> React JS, Bootstrap, Node JS, PostgreSQL,
+            Express, S3. <br></br>This project facilitates efficient project
+            management within a college ecosystem, enabling college
+            administrators, HODs, professors, and students to collaborate
+            seamlessly. It streamlines mentor selection, project approval, and
+            project finalization processes, while also providing hierarchical
+            visibility of ongoing projects tailored to each role.
           </p>
           <div className="flex justify-center gap-10 pt-5">
             <div>

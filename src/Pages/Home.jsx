@@ -6,6 +6,8 @@ import About from "../components/About";
 import Education from "../components/Education";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
+import Experience from "../components/Experience";
+import Contact from "../components/Contact";
 const Home = () => {
   return (
     <div>
@@ -25,11 +27,11 @@ const Home = () => {
       <section id="PROJECTS" className="pt-20 pb-10">
         <Projects></Projects>
       </section>
-      <section id="EXPERIENCE" className="pt-20  h-screen ">
-        <div>fesfes</div>
+      <section id="EXPERIENCE" className="pt-20 pb-10">
+        <Experience></Experience>
       </section>
-      <section id="CONTACT" className="pt-20  h-screen ">
-        <div>fesfes</div>
+      <section id="CONTACT" className="py-20  ">
+        <Contact></Contact>
       </section>
     </div>
   );
