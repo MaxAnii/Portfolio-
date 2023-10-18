@@ -1,10 +1,37 @@
-import React from "react";
-import { Card, Input, Textarea } from "@nextui-org/react";
+import React, { useRef } from "react";
+import { Button, Input, Textarea } from "@nextui-org/react";
+import emailjs from "@emailjs/browser";
 import SocialMedia from "./SocialMedia";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
+  const form = useRef();
+  const sendMail = async (e) => {
+    e.preventDefault();
+
+    toast("Sending mail");
+
+    emailjs
+      .sendForm(
+        "service_bvzbali",
+        "template_5n3ihsb",
+        form.current,
+        "T3cRhw9-1GPwq4quS"
+      )
+      .then(
+        (result) => {
+          toast("mail send successfully");
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div>
       {" "}
+      <ToastContainer position="top-right" theme="dark" newestOnTop={false} />;
       <div className="text-center">
         <div className="text-center about md:text-5xl text-3xl">
           Get in touch
@@ -14,11 +41,8 @@ const Contact = () => {
           . . . .
         </div>
       </div>
-      <Card
-        isBlurred
-        className="border-none bg-white/10 md:mx-[10vw] lg:mx-[15vw] mx-4 mt-[9vh] p-6"
-      >
-        <div>
+      <div className="border-2 border-r-rose-400 border-b-rose-400 md:mx-[10vw] lg:mx-[15vw] mx-4 mt-[9vh] p-6 rounded-3xl">
+        <form onSubmit={sendMail} ref={form}>
           <div className="flex   md:gap-10 gap-3">
             <Input
               type="email"
@@ -26,6 +50,7 @@ const Contact = () => {
               labelPlacement="outside"
               isRequired
               placeholder="Enter your email"
+              name="user_email"
             />
             <Input
               type="text"
@@ -33,6 +58,7 @@ const Contact = () => {
               labelPlacement="outside"
               isRequired
               placeholder="Enter your name"
+              name="user_name"
             />
           </div>
           <div className="pt-[3vh] w-[100%]">
@@ -42,6 +68,7 @@ const Contact = () => {
               labelPlacement="outside"
               isRequired
               placeholder="Enter your subject"
+              name="subject"
             />
           </div>
           <div className="pt-[3vh] w-[100%]">
@@ -52,10 +79,14 @@ const Contact = () => {
               labelPlacement="outside"
               minRows="4"
               placeholder="How can i help you?"
+              name="message"
             />
           </div>
-        </div>
-      </Card>
+          <div className="flex justify-end pt-3">
+            <Button type="submit">Send</Button>
+          </div>
+        </form>
+      </div>
       <div className="md:mx-[10vw] mx-4 mt-[3vh] p-6">
         <SocialMedia></SocialMedia>
       </div>

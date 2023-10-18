@@ -6,17 +6,28 @@ import github from "../assets/languageLogo/github.png";
 import gmail from "../assets/languageLogo/gmail.png";
 import discord from "../assets/languageLogo/discord.png";
 const SocialMedia = () => {
-  const icons = [twitter, linkedin, github, gmail, discord];
+  const icons = [
+    {
+      img: discord,
+      url: "https://discordapp.com/users/1164203541737513031",
+    },
+    { img: linkedin, url: "https://linkedin.com/in/ansar-ul-haq" },
+    { img: github, url: "https://github.com/MaxAnii" },
+
+    { img: twitter, url: "https://twitter.com/ansar__baba" },
+  ];
   return (
     <div className="flex justify-center md:gap-10 gap-5">
       {icons.map((elem, index) => {
         return (
-          <Avatar
-            className="md:w-16 md:h-16 text-large h-12 w-12 bg-white"
-            isBordered
-            radius="lg"
-            src={elem}
-          />
+          <a href={elem.url} target="_blank">
+            <Avatar
+              className="md:w-16 md:h-16 text-large h-12 w-12 bg-white hover:scale-50"
+              isBordered
+              radius="lg"
+              src={elem.img}
+            />
+          </a>
         );
       })}
     </div>
