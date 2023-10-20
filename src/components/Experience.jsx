@@ -1,5 +1,6 @@
 import React from "react";
-import { Divider, Link } from "@nextui-org/react";
+import { Divider } from "@nextui-org/react";
+import { Link } from "react-router-dom";
 const Experience = () => {
   return (
     <div>
@@ -23,6 +24,28 @@ const Experience = () => {
           </div>
           <div>
             <ul className="list-disc ">
+              <li className="py-5">
+                <div>
+                  <h3 className="text-3xl mb-5">
+                    Karnataka State Pollution Control Board
+                    <span className="text-right"> | Present</span>
+                  </h3>
+                  <p>
+                    <div className="mb-3">
+                      <b> Technologies :</b> React JS, Bootstrap, Node JS,
+                      PostgreSQL, Express Framework and RESTful services.
+                    </div>
+                    During my internship at Varcons Technologies Pvt Ltd from, I
+                    led a dynamic 5-member team in the development of "Leisure
+                    Square," an extensive website template for a cafe. My role
+                    encompassed spearheading collaborative efforts, overseeing
+                    interactive web page creation, ensuring seamless alignment
+                    between design briefs and client specifications for a
+                    captivating online presentation.
+                  </p>
+                </div>
+              </li>
+              <Divider className="my-4" />
               <li>
                 <div>
                   <h3 className="text-3xl mb-5">
@@ -40,10 +63,10 @@ const Experience = () => {
                     between design briefs and client specifications for a
                     captivating online presentation.
                   </p>
-                  <div className="justify-center flex gap-4 my-5 ">
+                  <div className="justify-center flex gap-8 my-5 ">
                     <div>
                       <Link
-                        to="https://github.com/MaxAnii/Share-Expense"
+                        to="https://github.com/MaxAnii/LeisureSquare"
                         target="_blank"
                         className="text-[#ff5d56] "
                       >
@@ -52,70 +75,11 @@ const Experience = () => {
                     </div>
                     <div>
                       <Link
-                        to="https://github.com/MaxAnii/Share-Expense"
+                        to="https://maxanii.github.io/LeisureSquare/"
                         target="_blank"
                         className="text-[#ff5d56] "
                       >
                         Live Demo
-                      </Link>
-                    </div>
-                    <div>
-                      <Link
-                        to="https://github.com/MaxAnii/Share-Expense"
-                        target="_blank"
-                        className="text-[#ff5d56] "
-                      >
-                        View certificate
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <Divider className="my-4" />
-              <li>
-                <div>
-                  <h3 className="text-3xl mb-5">
-                    Karnataka State Pollution Control Board
-                  </h3>
-                  <p>
-                    <div className="mb-3">
-                      <b> Technologies :</b> React JS, Bootstrap, Node JS,
-                      PostgreSQL, Express Framework and RESTful services.
-                    </div>
-                    During my internship at Varcons Technologies Pvt Ltd from, I
-                    led a dynamic 5-member team in the development of "Leisure
-                    Square," an extensive website template for a cafe. My role
-                    encompassed spearheading collaborative efforts, overseeing
-                    interactive web page creation, ensuring seamless alignment
-                    between design briefs and client specifications for a
-                    captivating online presentation.
-                  </p>
-                  <div className="justify-center flex gap-4 my-5 ">
-                    <div>
-                      <Link
-                        to="https://github.com/MaxAnii/Share-Expense"
-                        target="_blank"
-                        className="text-[#ff5d56] "
-                      >
-                        Github
-                      </Link>
-                    </div>
-                    <div>
-                      <Link
-                        to="https://github.com/MaxAnii/Share-Expense"
-                        target="_blank"
-                        className="text-[#ff5d56] "
-                      >
-                        Live Demo
-                      </Link>
-                    </div>
-                    <div>
-                      <Link
-                        to="https://github.com/MaxAnii/Share-Expense"
-                        target="_blank"
-                        className="text-[#ff5d56] "
-                      >
-                        View certificate
                       </Link>
                     </div>
                   </div>

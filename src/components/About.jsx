@@ -16,34 +16,37 @@ const About = () => {
 
       <div className="md:flex md:pl-[10vw] pt-[9vh]">
         <div className="" data-aos="fade-right">
-          <Card className="py-4">
-            <CardBody className="overflow-visible py-2">
-              <Image
-                isZoomed
-                alt="Card background"
-                className="object-cover rounded-xl w-full md:w-auto"
-                src={profile2}
-              />
-            </CardBody>
-          </Card>
+          <div className="sm:flex sm:justify-center">
+            <Card className="py-4">
+              <CardBody className="overflow-visible py-2">
+                <Image
+                  isZoomed
+                  alt="Card background"
+                  className="object-cover rounded-xl w-full md:w-auto"
+                  src={profile2}
+                />
+              </CardBody>
+            </Card>
+          </div>
         </div>
         <div className=" md:pl-10 md:w-1/2 pl-3">
-          <h3 className="text-3xl text-center md:text-left  md:p-0 w-auto">
+          <h3 className="text-3xl text-center md:text-left  md:p-0 w-auto ">
             I'm Ansar Ul Haq
           </h3>
-          <p className="pt-5 text-center md:text-left">
-            Et laboris sit labore aliqua sit est deserunt occaecat eiusmod minim
-            cillum minim. Deserunt voluptate laboris veniam incididunt dolore
-            veniam aute cillum cillum esse est cillum exercitation nostrud.
-            Nostrud nulla culpa consectetur ad do esse quis id cillum
-            deserunt.Reprehenderit mollit occaecat ullamco excepteur ea ad. Ad
-            excepteur culpa elit culpa tempor culpa consequat Lorem dolor. Lorem
-            ipsum dolor enim qui elit et laboris sit fugiat sunt. Aute fugiat
-            dolore labore incididunt reprehenderit nostrud consequat qui ad
-            minim ad esse ut. Et laboris sit labore aliqua sit est deserunt
-            occaecat eiusmod minim cillum minim. Deserunt voluptate laboris
-            veniam incididunt dolore veniam aute cillum cillum esse est cillum
-            exercitation nostrud.
+          <p className="pt-5 text-center md:text-left ">
+            My journey in web development has been nothing short of magical.
+            Like an alchemist turning base elements into gold, I transform lines
+            of code into interactive, visually stunning web applications. React
+            and Node.js serve as my trusted tools, enabling me to breathe life
+            into digital dreams and deliver exceptional user experiences.
+          </p>
+          <p className="mt-5">
+            I invite you to explore my portfolio and witness the fusion of
+            technology and artistry. Whether you seek a dynamic web application,
+            a visually engaging website, or an interactive user interface, I
+            stand ready to turn your digital vision into reality. Let's embark
+            on a transformative journey together, as I continue to channel my
+            inner Tech Alchemist to shape the future of the web.
           </p>
           <div className=" lg:block md:hidden ">
             <BasicInformation></BasicInformation>

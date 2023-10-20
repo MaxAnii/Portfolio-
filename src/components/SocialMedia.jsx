@@ -20,9 +20,9 @@ const SocialMedia = () => {
     <div className="flex justify-center md:gap-10 gap-5">
       {icons.map((elem, index) => {
         return (
-          <a href={elem.url} target="_blank">
+          <a href={elem.url} target="_blank" key={index}>
             <Avatar
-              className="md:w-16 md:h-16 text-large h-12 w-12 bg-white hover:scale-50"
+              className="md:w-16 md:h-16 text-large h-12 w-12 bg-white hover:rotate-12"
               isBordered
               radius="lg"
               src={elem.img}

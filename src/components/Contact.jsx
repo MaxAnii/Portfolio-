@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import SocialMedia from "./SocialMedia";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 const Contact = () => {
   const form = useRef();
   const sendMail = async (e) => {
@@ -13,10 +14,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_bvzbali",
-        "template_5n3ihsb",
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         form.current,
-        "T3cRhw9-1GPwq4quS"
+        import.meta.env.VITE_PUBLIC_KEY
       )
       .then(
         (result) => {
@@ -41,7 +42,7 @@ const Contact = () => {
           . . . .
         </div>
       </div>
-      <div className="border-2 border-r-rose-400 border-b-rose-400 md:mx-[10vw] lg:mx-[15vw] mx-4 mt-[9vh] p-6 rounded-3xl">
+      <div className="border-2 border-l-rose-400 border-t-rose-400 md:mx-[10vw] lg:mx-[15vw] mx-4 mt-[9vh] p-6 rounded-3xl">
         <form onSubmit={sendMail} ref={form}>
           <div className="flex   md:gap-10 gap-3">
             <Input
@@ -83,7 +84,14 @@ const Contact = () => {
             />
           </div>
           <div className="flex justify-end pt-3">
-            <Button type="submit">Send</Button>
+            <Button
+              color="danger"
+              variant="bordered"
+              className=" text-[#ff5d56] mt-4 p-5"
+              type="submit"
+            >
+              Send
+            </Button>
           </div>
         </form>
       </div>

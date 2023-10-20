@@ -32,9 +32,7 @@
   'opsz' 24,
   
 }
- /* span {
-  margin-left: 2px;
-} */
+
 .hide-scroll::-webkit-scrollbar{
 display: none;
 }
