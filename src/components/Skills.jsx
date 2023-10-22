@@ -108,7 +108,11 @@ const Skills = () => {
                   <div data-aos="fade-right" key={index}>
                     <div className="flex py-3">
                       <div className="avatar">
-                        <Avatar src={elem.img} size="lg" />
+                        <Avatar
+                          src={elem.img}
+                          size="lg"
+                          className="bg-white/90"
+                        />
                       </div>
                       <div className="name pt-4 pl-5">{elem.title}</div>
                     </div>
@@ -131,7 +135,11 @@ const Skills = () => {
                   <div data-aos="zoom-in" key={index}>
                     <div className="flex py-3">
                       <div className="avatar">
-                        <Avatar src={elem.img} size="lg" />
+                        <Avatar
+                          src={elem.img}
+                          size="lg"
+                          className="bg-white/90"
+                        />
                       </div>
                       <div className="name pt-4 pl-5">{elem.title}</div>
                     </div>
@@ -199,7 +207,11 @@ const Skills = () => {
                   <div data-aos="fade-left" key={index}>
                     <div className="flex py-3">
                       <div className="avatar">
-                        <Avatar src={elem.img} size="lg" />
+                        <Avatar
+                          src={elem.img}
+                          size="lg"
+                          className="bg-white/90"
+                        />
                       </div>
                       <div className="name pt-4 pl-5">{elem.title}</div>
                     </div>

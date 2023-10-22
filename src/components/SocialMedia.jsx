@@ -3,7 +3,6 @@ import { Avatar } from "@nextui-org/react";
 import twitter from "../assets/languageLogo/twitter.png";
 import linkedin from "../assets/languageLogo/linkedin.png";
 import github from "../assets/languageLogo/github.png";
-import gmail from "../assets/languageLogo/gmail.png";
 import discord from "../assets/languageLogo/discord.png";
 const SocialMedia = () => {
   const icons = [

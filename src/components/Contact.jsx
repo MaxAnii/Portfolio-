@@ -32,7 +32,7 @@ const Contact = () => {
   return (
     <div>
       {" "}
-      <ToastContainer position="top-right" theme="dark" newestOnTop={false} />;
+      <ToastContainer position="top-right" theme="dark" newestOnTop={false} />
       <div className="text-center">
         <div className="text-center about md:text-5xl text-3xl">
           Get in touch
