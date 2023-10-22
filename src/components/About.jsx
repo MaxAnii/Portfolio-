@@ -33,14 +33,14 @@ const About = () => {
           <h3 className="text-3xl text-center md:text-left  md:p-0 w-auto ">
             I'm Ansar Ul Haq
           </h3>
-          <p className="pt-5 text-center md:text-left ">
+          <p className="pt-5 text-center md:text-left text-xl">
             My journey in web development has been nothing short of magical.
             Like an alchemist turning base elements into gold, I transform lines
             of code into interactive, visually stunning web applications. React
             and Node.js serve as my trusted tools, enabling me to breathe life
             into digital dreams and deliver exceptional user experiences.
           </p>
-          <p className="mt-5">
+          <p className="mt-5 text-xl">
             I invite you to explore my portfolio and witness the fusion of
             technology and artistry. Whether you seek a dynamic web application,
             a visually engaging website, or an interactive user interface, I

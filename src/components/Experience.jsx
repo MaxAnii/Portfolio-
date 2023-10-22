@@ -10,7 +10,7 @@ const Experience = () => {
             My Experience
           </div>
           <div className="pt-2">
-            Professional Profile - There Is All About My Education
+            Professional Profile - There Is All About My Experience
           </div>
           <div className="text-[#ff5d56] text-7xl mt-[-35px] font-bold">
             . . . .
@@ -30,8 +30,8 @@ const Experience = () => {
                     Karnataka State Pollution Control Board
                     <span className="text-right"> | Present</span>
                   </h3>
-                  <p>
-                    <div className="mb-3">
+                  <p className="text-xl">
+                    <div className="mb-3 ">
                       <b> Technologies :</b> React JS, Bootstrap, Node JS,
                       PostgreSQL, Express Framework and RESTful services.
                     </div>
@@ -51,7 +51,7 @@ const Experience = () => {
                   <h3 className="text-3xl mb-5">
                     Varcons Technologies Pvt Ltd
                   </h3>
-                  <p>
+                  <p className="text-xl">
                     <div className="mb-3">
                       <b> Technologies :</b> HTML, CSS, JavaScript, Bootstrap.
                     </div>

@@ -11,7 +11,7 @@ const Projects = () => {
           My Projects
         </div>
         <div className="pt-2">
-          Professional Profile - There Is All About My Education
+          Professional Profile - There Is All About My Projects
         </div>
         <div className="text-[#ff5d56] text-7xl mt-[-35px] font-bold">
           . . . .
@@ -27,7 +27,7 @@ const Projects = () => {
           <h3 className="text-3xl text-center md:text-left  md:p-0 w-auto ">
             Share Expense
           </h3>
-          <p className="pt-5 text-center md:text-left ">
+          <p className="pt-5 text-center md:text-left text-xl">
             <b>Technologies :</b> React JS, Bootstrap, Node JS, PostgreSQL,
             Express, Passport JS.<br></br> Empower your group's financial
             management with our website's interactive landing page. Create
@@ -71,7 +71,7 @@ const Projects = () => {
           <h3 className="text-3xl text-center md:text-left  md:p-0 w-auto ">
             Project Manager
           </h3>
-          <p className="pt-5 text-center md:text-left lg:text-lg">
+          <p className="pt-5 text-center md:text-left text-xl">
             <b> Technologies :</b> React JS, Bootstrap, Node JS, PostgreSQL,
             Express, S3. <br></br>This project facilitates efficient project
             management within a college ecosystem, enabling college

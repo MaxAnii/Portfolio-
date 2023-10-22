@@ -17,7 +17,7 @@ const Hero = () => {
           }}
         />
       </div>
-      <div className="lg:pt-[1vh] md:pt-[3vh] pt-[2vh] md:w-1/2">
+      <div className="lg:pt-[1vh] md:pt-[3vh] pt-[2vh] md:w-1/2 text-xl">
         Welcome to my digital realm, where I weave lines of code into
         captivating web experiences. With a passion for React and Node.js, I
         craft dynamic and responsive websites that bring ideas to life. Explore

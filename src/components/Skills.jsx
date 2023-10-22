@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
+import { Card, CardBody, CardHeader, Avatar } from "@nextui-org/react";
 import c from "../assets/languageLogo/c.ico";
 import c1 from "../assets/languageLogo/c(1).ico";
 import java from "../assets/languageLogo/java (1).ico";
@@ -94,122 +94,120 @@ const Skills = () => {
           . . . .
         </div>
       </div>
-      <div className="lg:h-[55vh]  lg:overflow-y-scroll hide-scroll lg:pb-5 ">
-        <div className="pt-[9vh] text-[#ff5d56] pl-[10vw] pb-[3vh] text-2xl">
-          Programing Language
+      <div className="md:ml-[10vw] md:mr-[10vw] md:grid md:grid-cols-2 lg:grid-cols-3 mt-[9vh] ">
+        <div className="1 px-5 my-3 md:my-0">
+          <Card className="py-4 px-5 ">
+            <CardHeader className=" px-4 ">
+              <h4 className="font-bold text-large text-[#ff5d56] text-center py-3 text-">
+                Programing Language
+              </h4>
+            </CardHeader>
+            <CardBody className="overflow-visible py-2  bg-white/5  rounded-lg">
+              {programingLanguage.map((elem, index) => {
+                return (
+                  <div data-aos="fade-right" key={index}>
+                    <div className="flex py-3">
+                      <div className="avatar">
+                        <Avatar src={elem.img} size="lg" />
+                      </div>
+                      <div className="name pt-4 pl-5">{elem.title}</div>
+                    </div>
+                  </div>
+                );
+              })}
+            </CardBody>
+          </Card>
         </div>
-        <div className="md:pl-[10vw] pr-[10vw] pl-[5%]">
-          <div className="gap-2 grid grid-cols-3 md:grid-cols-6 lg:grid-cols-10 w-fit h-fit">
-            {programingLanguage.map((item, index) => (
-              <Card shadow="sm" key={index} isPressable p-2>
-                <CardBody className="overflow-visible p-0 bg-black/60 ">
-                  <Image
-                    shadow="sm"
-                    radius="lg"
-                    alt={item.title}
-                    className=" "
-                    src={item.img}
-                  />
-                </CardBody>
-                <CardFooter className="text-small ">
-                  <b className="text-center">{item.title}</b>
-                </CardFooter>
-              </Card>
-            ))}
-          </div>
-        </div>
+        <div className="2 px-5 my-3 md:my-0">
+          <Card className="py-4 px-5 ">
+            <CardHeader className=" pt-2 px-4 ">
+              <h4 className="font-bold text-large text-[#ff5d56] text-center py-3 ">
+                Database
+              </h4>
+            </CardHeader>
+            <CardBody className="overflow-visible py-2 bg-white/5  rounded-lg">
+              {database.map((elem, index) => {
+                return (
+                  <div data-aos="zoom-in" key={index}>
+                    <div className="flex py-3">
+                      <div className="avatar">
+                        <Avatar src={elem.img} size="lg" />
+                      </div>
+                      <div className="name pt-4 pl-5">{elem.title}</div>
+                    </div>
+                  </div>
+                );
+              })}
+            </CardBody>
 
-        <div className="pt-[40px] text-[#ff5d56] pl-[10vw] pb-[3vh] text-2xl ">
-          Database
+            <CardHeader className=" px-4 ">
+              <h4 className="font-bold text-large text-[#ff5d56] text-center py-3 text-">
+                Frame Work
+              </h4>
+            </CardHeader>
+            <CardBody className="overflow-visible py-2 bg-white/5  rounded-lg">
+              {framework.map((elem, index) => {
+                return (
+                  <div data-aos="zoom-in" key={index}>
+                    <div className="flex py-3">
+                      <div className="avatar">
+                        <Avatar src={elem.img} size="lg" />
+                      </div>
+                      <div className="name pt-4 pl-5">{elem.title}</div>
+                    </div>
+                  </div>
+                );
+              })}
+            </CardBody>
+
+            <CardHeader className="pb-0 pt-2 px-4 ">
+              <h4 className="font-bold text-large text-[#ff5d56] text-center py-3 text-">
+                Tools
+              </h4>
+            </CardHeader>
+            <CardBody className="overflow-visible py-2 bg-white/5  rounded-lg">
+              {tools.map((elem, index) => {
+                return (
+                  <div data-aos="zoom-in" key={index}>
+                    <div className="flex py-3">
+                      <div className="avatar">
+                        <Avatar
+                          src={elem.img}
+                          size="lg"
+                          shadow="sm"
+                          className="bg-yellow-100"
+                        />
+                      </div>
+                      <div className="name pt-4 pl-5">{elem.title}</div>
+                    </div>
+                  </div>
+                );
+              })}
+            </CardBody>
+          </Card>
         </div>
-        <div className="md:pl-[10vw] pr-[10vw] pl-[5%]">
-          <div className="gap-2 grid grid-cols-3 md:grid-cols-6 lg:grid-cols-10  w-fit h-fit">
-            {database.map((item, index) => (
-              <Card shadow="sm" key={index} isPressable p-2>
-                <CardBody className="overflow-visible p-0 bg-black/60 ">
-                  <Image
-                    shadow="sm"
-                    radius="lg"
-                    alt={item.title}
-                    className=" "
-                    src={item.img}
-                  />
-                </CardBody>
-                <CardFooter className="text-small ">
-                  <b className="text-center">{item.title}</b>
-                </CardFooter>
-              </Card>
-            ))}
-          </div>
-        </div>
-        <div className="pt-[40px] text-[#ff5d56] pl-[10vw] pb-[3vh] text-2xl">
-          Tools
-        </div>
-        <div className="md:pl-[10vw] pr-[10vw] pl-[5%]">
-          <div className="gap-2 grid grid-cols-3 md:grid-cols-6 lg:grid-cols-10  w-fit h-fit">
-            {tools.map((item, index) => (
-              <Card shadow="sm" key={index} isPressable p-2>
-                <CardBody className="overflow-visible p-0 bg-black/60 ">
-                  <Image
-                    shadow="sm"
-                    radius="lg"
-                    alt={item.title}
-                    className=" "
-                    src={item.img}
-                  />
-                </CardBody>
-                <CardFooter className="text-sm ">
-                  <b className="md:text-center">{item.title}</b>
-                </CardFooter>
-              </Card>
-            ))}
-          </div>
-        </div>
-        <div className="pt-[40px] text-[#ff5d56] pl-[10vw] pb-[3vh] text-2xl">
-          FrameWork
-        </div>
-        <div className="md:pl-[10vw] pr-[10vw] pl-[5%]">
-          <div className="gap-2 grid grid-cols-3 md:grid-cols-6 lg:grid-cols-10  w-fit h-fit">
-            {framework.map((item, index) => (
-              <Card shadow="sm" key={index} isPressable p-2>
-                <CardBody className="overflow-visible p-0 bg-black/60 ">
-                  <Image
-                    shadow="sm"
-                    radius="lg"
-                    alt={item.title}
-                    className=" "
-                    src={item.img}
-                  />
-                </CardBody>
-                <CardFooter className="text-small ">
-                  <b className="text-center">{item.title}</b>
-                </CardFooter>
-              </Card>
-            ))}
-          </div>
-        </div>
-        <div className="pt-[40px] text-[#ff5d56] pl-[10vw] pb-[3vh] text-2xl">
-          Libraries
-        </div>
-        <div className="md:pl-[10vw] pr-[10vw] pl-[5%]">
-          <div className="gap-2 grid grid-cols-3 md:grid-cols-6 lg:grid-cols-10  w-fit h-fit">
-            {libraries.map((item, index) => (
-              <Card shadow="sm" key={index} isPressable p-2>
-                <CardBody className="overflow-visible p-0 bg-black/60 ">
-                  <Image
-                    shadow="sm"
-                    radius="lg"
-                    alt={item.title}
-                    className=" "
-                    src={item.img}
-                  />
-                </CardBody>
-                <CardFooter className="text-small ">
-                  <b className="text-center">{item.title}</b>
-                </CardFooter>
-              </Card>
-            ))}
-          </div>
+        <div className="3 px-5 md:mt-3 lg:mt-0">
+          <Card className="py-4 px-5">
+            <CardHeader className="pb-0 pt-2 px-4 ">
+              <h4 className="font-bold text-large text-[#ff5d56] text-center py-3 text-">
+                Libraries
+              </h4>
+            </CardHeader>
+            <CardBody className="overflow-visible py-2 bg-white/5  rounded-lg">
+              {libraries.map((elem, index) => {
+                return (
+                  <div data-aos="fade-left" key={index}>
+                    <div className="flex py-3">
+                      <div className="avatar">
+                        <Avatar src={elem.img} size="lg" />
+                      </div>
+                      <div className="name pt-4 pl-5">{elem.title}</div>
+                    </div>
+                  </div>
+                );
+              })}
+            </CardBody>
+          </Card>
         </div>
       </div>
     </div>
