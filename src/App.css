@@ -11,7 +11,7 @@
 }
 .profile-photo{
   background:url("../src/assets/Profile1.jpg") no-repeat;
-  background-position-x:50vw;
+  background-position-x:55vw;
   background-position-y: -11vh;
   background-size: 50vh ;
 }
@@ -35,7 +35,7 @@
 .hide-scroll::-webkit-scrollbar{
 display: none;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .profile-photo{
     background-position-y: -20vh;
     background-position-x:center;
