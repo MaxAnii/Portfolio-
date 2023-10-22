@@ -11,9 +11,8 @@
 }
 .profile-photo{
   background:url("../src/assets/Profile1.jpg") no-repeat;
-  background-position-x:55vw;
+  background-position-x:50vw;
   background-position-y: -11vh;
- 
   background-size: 50vh ;
 }
 

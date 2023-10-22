@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-
+import resume from "../assets/Resume2.pdf";
 import Typewriter from "typewriter-effect";
 import { Button } from "@nextui-org/react";
 const Hero = () => {
@@ -29,7 +29,7 @@ const Hero = () => {
         variant="bordered"
         className=" text-[#ff5d56] mt-4 p-5"
       >
-        <a href="../assets/Resume.pdf" download>
+        <a href={resume} download>
           Download CV
         </a>
       </Button>{" "}
