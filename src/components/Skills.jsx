@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, CardBody, CardHeader, Avatar } from "@nextui-org/react";
 import c from "../assets/languageLogo/c.ico";
 import c1 from "../assets/languageLogo/c(1).ico";
@@ -15,6 +14,7 @@ import typescript from "../assets/languageLogo/typescript.ico";
 import express from "../assets/languageLogo/express-js.png";
 import tailwind from "../assets/languageLogo/tailwind2.png";
 
+
 const Skills = () => {
   const programingLanguage = [
     {
@@ -23,6 +23,10 @@ const Skills = () => {
     },
     {
       title: "C++",
+      img: c1,
+    },
+    {
+      title: "Deep Cock Sucker 🍆",
       img: c1,
     },
     {
@@ -43,7 +47,7 @@ const Skills = () => {
     },
 
     {
-      title: "Css",
+      title: "CSS",
       img: css,
     },
   ];
@@ -59,17 +63,17 @@ const Skills = () => {
   ];
   const tools = [
     {
-      title: "Node js",
+      title: "Node JS",
       img: nodejs,
     },
   ];
   const framework = [
     {
-      title: "Express js",
+      title: "Express JS",
       img: express,
     },
     {
-      title: "React js",
+      title: "React JS",
       img: react,
     },
   ];
@@ -79,7 +83,7 @@ const Skills = () => {
       img: bootstrap,
     },
     {
-      title: "Tailwind Css",
+      title: "Tailwind CSS",
       img: tailwind,
     },
   ];
