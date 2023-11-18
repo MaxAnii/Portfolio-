@@ -35,13 +35,9 @@ const Experience = () => {
                       <b> Technologies :</b> React JS, Bootstrap, Node JS,
                       PostgreSQL, Express Framework and RESTful services.
                     </div>
-                    During my internship at Varcons Technologies Pvt Ltd from, I
-                    led a dynamic 5-member team in the development of "Leisure
-                    Square," an extensive website template for a cafe. My role
-                    encompassed spearheading collaborative efforts, overseeing
-                    interactive web page creation, ensuring seamless alignment
-                    between design briefs and client specifications for a
-                    captivating online presentation.
+                      As a software engineer, my job is to design software
+                      that the KSPCB can use to handle all industrial-related
+                      details.
                   </p>
                 </div>
               </li>
