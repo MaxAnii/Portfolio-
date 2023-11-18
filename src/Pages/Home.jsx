@@ -18,17 +18,17 @@ const Home = () => {
       <section className="py-20" id="ABOUT">
         <About></About>
       </section>
-      <section id="EDUCATION" className="pt-20 pb-10">
-        <Education></Education>
-      </section>
-      <section id="SKILLS" className="pt-20 pb-10">
-        <Skills></Skills>
-      </section>
       <section id="PROJECTS" className="pt-20 pb-10">
         <Projects></Projects>
       </section>
       <section id="EXPERIENCE" className="pt-20 pb-10">
         <Experience></Experience>
+      </section>
+      <section id="EDUCATION" className="pt-20 pb-10">
+        <Education></Education>
+      </section>
+      <section id="SKILLS" className="pt-20 pb-10">
+        <Skills></Skills>
       </section>
       <section id="CONTACT" className="py-20  ">
         <Contact></Contact>
