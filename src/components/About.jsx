@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import profile2 from "../assets/profile1-removebg-preview.png";
+import profile2 from "../assets/Profile/Profile2.jpg";
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 import BasicInformation from "./BasicInformation";
 const About = () => {

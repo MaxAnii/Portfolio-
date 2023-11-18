@@ -1,9 +1,9 @@
 import React from "react";
 import { Avatar } from "@nextui-org/react";
-import twitter from "../assets/languageLogo/twitter.png";
-import linkedin from "../assets/languageLogo/linkedin.png";
-import github from "../assets/languageLogo/github.png";
-import discord from "../assets/languageLogo/discord.png";
+import twitter from "../assets/SocialMedia/twitter.png";
+import linkedin from "../assets/SocialMedia/linkedin.png";
+import github from "../assets/SocialMedia/github.png";
+import discord from "../assets/SocialMedia/discord.png";
 const SocialMedia = () => {
   const icons = [
     {
