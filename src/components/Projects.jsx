@@ -1,7 +1,8 @@
 import React from "react";
 import { Image } from "@nextui-org/react";
-import shareexpense from "../assets/languageLogo/shareexpense.png";
-import projectmanager from "../assets/languageLogo/projectManager2.png";
+import shareexpense from "../assets/Project/shareexpense.png";
+import projectmanager from "../assets/Project/projectManager2.png";
+import checkYourHistory from "../assets/Project/checkYourHistory.png";
 import { Link } from "react-router-dom";
 const Projects = () => {
   return (
@@ -84,6 +85,36 @@ const Projects = () => {
             <div>
               <Link
                 to="https://github.com/MaxAnii/Project-Manager"
+                target="_blank"
+                className="text-[#ff5d56] "
+              >
+                Github
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="lg:grid lg:grid-cols-2 md:pl-[10vw] md:pr-[10vw] pt-[9vh] p-5">
+        <div className="md:pt-[10vh] lg:pt-0">
+          <div className="" data-aos="zoom-in">
+            <Image isBlurred src={checkYourHistory}></Image>
+          </div>
+        </div>
+        <div className=" md:pl-10 pl-3 pt-5 ">
+          <h3 className="text-3xl text-center md:text-left  md:p-0 w-auto ">
+            Check Your History
+          </h3>
+          <p className="pt-5 text-center md:text-left text-xl">
+            <b>Technologies :</b> React JS, Chrome API<br></br> Chromium-based
+            browsers extension to access your history without leaving your
+            active browser tab and allows you to delete the history of a
+            specific site and you can see the top 10 most visited site in 3
+            months
+          </p>
+          <div className="flex justify-center gap-10 pt-5">
+            <div>
+              <Link
+                to="https://github.com/MaxAnii/Web-History-Extension"
                 target="_blank"
                 className="text-[#ff5d56] "
               >
