@@ -16,10 +16,10 @@ const Nav = () => {
   const menuItems = [
     "HOME",
     "ABOUT",
-    "EDUCATION",
-    "SKILLS",
     "PROJECTS",
     "EXPERIENCE",
+    "EDUCATION",
+    "SKILLS",
     "CONTACT",
   ];
 
@@ -40,41 +40,15 @@ const Nav = () => {
         className="md:hidden hidden  gap-4 pl-20  lg:flex"
         justify="center"
       >
-        <NavbarItem>
-          <Link color="foreground" href="#HOME">
-            HOME
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link href="#ABOUT" color="foreground">
-            ABOUT
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#EDUCATION">
-            EDUCATION
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#SKILLS">
-            SKILLS
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#PROJECTS">
-            PROJECTS
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#EXPERIENCE">
-            EXPERIENCE
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#CONTACT">
-            CONTACT
-          </Link>
-        </NavbarItem>
+        {menuItems.map((elem, index) => {
+          return (
+            <NavbarItem>
+              <Link color="foreground" href={`#${elem}`}>
+                {elem}
+              </Link>
+            </NavbarItem>
+          );
+        })}
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarMenuToggle
