@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import resume from "../assets/Resume2.pdf";
+import resume from "../assets/resume.pdf";
 import Typewriter from "typewriter-effect";
 import { Button } from "@nextui-org/react";
 const Hero = () => {
