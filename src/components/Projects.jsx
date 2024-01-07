@@ -84,7 +84,7 @@ const Projects = () => {
           <div className="flex justify-center gap-10 pt-5">
             <div>
               <Link
-                to="https://github.com/MaxAnii/Project-Manager"
+                to="https://github.com/MaxAnii/ProjectHarbor"
                 target="_blank"
                 className="text-[#ff5d56] "
               >
