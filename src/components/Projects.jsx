@@ -70,7 +70,7 @@ const Projects = () => {
         </div>
         <div className=" md:pl-10 pl-3 pt-5 lg:w-[40vw] lg:pt-0 lg:pl-0">
           <h3 className="text-3xl text-center md:text-left  md:p-0 w-auto ">
-            Project Manager
+            ProjectHarbor
           </h3>
           <p className="pt-5 text-center md:text-left text-xl">
             <b> Technologies :</b> React JS, Bootstrap, Node JS, PostgreSQL,
