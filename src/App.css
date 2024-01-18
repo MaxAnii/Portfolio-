@@ -10,10 +10,11 @@
  
 }
 .profile-photo{
-  background:url("../src/assets/Profile/Profile1.jpg") no-repeat;
-  background-position-x:55vw;
-  background-position-y: -11vh;
-  background-size: 50vh ;
+  background:url("../src/assets/Profile/Profile3.png") no-repeat;
+   background-position-x:right;
+  background-position-y: 3vh;
+   background-size: 120vh ;  
+  /* width: auto; */
 }
 
 #ABOUT,#SKILLS,#EXPERIENCE{
@@ -35,10 +36,16 @@
 .hide-scroll::-webkit-scrollbar{
 display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1014px) {
   .profile-photo{
-    background-position-y: -20vh;
-    background-position-x:center;
+    background-position-y: 3vh;
+    background-position-x:right; 
+  }
+}
+@media screen and (max-width: 425px) {
+  .profile-photo{
+    background-position-y: 3vh;
     
+    background-size:750px ;
   }
 }
