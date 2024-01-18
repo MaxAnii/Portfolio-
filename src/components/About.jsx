@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
-import profile2 from "../assets/Profile/Profile2.jpg";
-import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
+import profile2 from "../assets/Profile/profile4.png";
+import { Card, CardBody, Image } from "@nextui-org/react";
 import BasicInformation from "./BasicInformation";
 const About = () => {
   return (
@@ -16,13 +16,13 @@ const About = () => {
 
       <div className="md:flex md:pl-[10vw] pt-[9vh]">
         <div className="" data-aos="fade-right">
-          <div className="sm:flex sm:justify-center">
+          <div className="sm:flex sm:justify-center px-[100px] pb-5 md:px-0">
             <Card className="py-4">
               <CardBody className="overflow-visible py-2">
                 <Image
                   isZoomed
                   alt="Card background"
-                  className="object-cover rounded-xl w-full md:w-auto"
+                  className="object-cover rounded-xl  md:w-[35vw] md:h-[60vh] lg:w-[30vw] lg:h-[70vh]"
                   src={profile2}
                 />
               </CardBody>
@@ -34,19 +34,19 @@ const About = () => {
             I'm Ansar Ul Haq
           </h3>
           <p className="pt-5 text-center md:text-left text-xl">
-            My journey in web development has been nothing short of magical.
-            Like an alchemist turning base elements into gold, I transform lines
-            of code into interactive, visually stunning web applications. React
-            and Node.js serve as my trusted tools, enabling me to breathe life
-            into digital dreams and deliver exceptional user experiences.
+            A self-taught web developer and a Computer Science student who
+            enjoys exploring into the digital world. I began my adventure into
+            web development out of personal interest, but it rapidly became an
+            important aspect of my life.
           </p>
           <p className="mt-5 text-xl">
-            I invite you to explore my portfolio and witness the fusion of
-            technology and artistry. Whether you seek a dynamic web application,
-            a visually engaging website, or an interactive user interface, I
-            stand ready to turn your digital vision into reality. Let's embark
-            on a transformative journey together, as I continue to channel my
-            inner Tech Alchemist to shape the future of the web.
+            I specialize in using the latest technology stack to create visually
+            appealing and user-friendly websites. From design to functionality,
+            I cover it all. I am always eager to learn and stay up-to-date with
+            the latest technological developments, and offer fresh perspectives
+            to every team or project I work on. Feel free to check out my
+            portfolio to see the great projects I have worked on. Let's
+            collaborate and create some amazing things in the IT industry!
           </p>
           <div className=" lg:block md:hidden ">
             <BasicInformation></BasicInformation>
