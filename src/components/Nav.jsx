@@ -42,7 +42,7 @@ const Nav = () => {
       >
         {menuItems.map((elem, index) => {
           return (
-            <NavbarItem>
+            <NavbarItem key={index}>
               <Link color="foreground" href={`#${elem}`}>
                 {elem}
               </Link>
