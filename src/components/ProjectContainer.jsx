@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Image } from "@nextui-org/react";
 const ProjectContainer = (props) => {
-  console.log(props.descriptionOrder, props.imageOrder);
+  console.log(props.imageOrder, props.descriptionOrder);
   return (
     <>
       <div className="md:pl-[10vw] md:pr-[10vw] lg:pt-[9vh] md:p-5 lg:overflow-hidden lg:flex">
