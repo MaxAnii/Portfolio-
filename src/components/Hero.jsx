@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="text-3xl h-20 md:text-5xl md:pt-5 text-[#ff5d56] pt-3">
         <Typewriter
           options={{
-            strings: ["TECH ALCHEMIST", "WEB DEVELOPER"],
+            strings: ["TECH ALCHEMIST ", "WEB DEVELOPER "],
             autoStart: true,
             loop: true,
             cursor: "|",
