@@ -1,10 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import { Image } from "@nextui-org/react";
 import shareexpense from "../assets/Project/shareexpense.png";
 import projectmanager from "../assets/Project/projectManager2.png";
 import checkYourHistory from "../assets/Project/checkYourHistory.png";
-import { Link } from "react-router-dom";
+import techNew from "../assets/Project/techNews.png";
+import ProjectContainer from "./ProjectContainer";
 const Projects = () => {
+  let imageOrder = 1;
+  let descriptionOrder = 2;
+  const [projectDetails, setProjectDetails] = useState([
+    {
+      projectName: "Share Expense",
+      image: shareexpense,
+      description:
+        "Empower your group's financial management with our website's interactive landing page. Create shared rooms, invite members, and seamlessly track expenses by creating and managing notes, ensuring transparency and ease in expense tracking.",
+      technologies:
+        " React JS, Bootstrap, Node JS, PostgreSQL, Express, Passport JS.",
+      github: "https://github.com/MaxAnii/Share-Expense",
+      liveDemo: "https://shareexpense.vercel.app",
+    },
+    {
+      projectName: "Project Harbor",
+      image: projectmanager,
+      description:
+        "This project facilitates efficient project management within a college ecosystem, enabling college administrators, HODs, professors, and students to collaborate seamlessly. It streamlines mentor selection, project approval, and project finalization processes, while also providing hierarchical visibility of ongoing projects tailored to each role.",
+      technologies: "  React JS, Bootstrap, Node JS, PostgreSQL, Express, S3.",
+      github: "https://github.com/MaxAnii/ProjectHarbor",
+    },
+    {
+      projectName: "Check Your History",
+      image: checkYourHistory,
+      description:
+        "Chromium-based browsers extension to access your history without leaving your active browser tab and allows you to delete the history of a specific site and you can see the top 10 most visited site in 3 months",
+      technologies: " React JS, Chrome API.",
+      github: "https://github.com/MaxAnii/Web-History-Extension",
+    },
+    {
+      projectName: "Tweet EveryDay",
+      image: techNew,
+      description:
+        " Stay ahead with automated tweets delivering the freshest tech news right to your feed. From groundbreaking discoveries to industry trends, I've got you covered.Plus, enjoy the convenience of timely updates! TechNews Automate tweets the latest tech news every 4 hours, ensuring you stay in the loop effortlessly.",
+      technologies: " Python, tweepy, newsapi",
+      github: "https://github.com/MaxAnii/Tweet_EveryDay",
+      liveDemo: "https://twitter.com/__TechNews",
+    },
+  ]);
   return (
     <div className="">
       <div className="text-center">
@@ -18,112 +58,19 @@ const Projects = () => {
           . . . .
         </div>
       </div>
-      <div className="lg:grid lg:grid-cols-2 md:pl-[10vw] md:pr-[10vw] pt-[9vh] p-5">
-        <div className="md:pt-[10vh] lg:pt-0">
-          <div className="" data-aos="zoom-in">
-            <Image isBlurred src={shareexpense}></Image>
-          </div>
-        </div>
-        <div className=" md:pl-10 pl-3 pt-5 ">
-          <h3 className="text-3xl text-center md:text-left  md:p-0 w-auto ">
-            Share Expense
-          </h3>
-          <p className="pt-5 text-center md:text-left text-xl">
-            <b>Technologies :</b> React JS, Bootstrap, Node JS, PostgreSQL,
-            Express, Passport JS.<br></br> Empower your group's financial
-            management with our website's interactive landing page. Create
-            shared rooms, invite members, and seamlessly track expenses by
-            creating and managing notes, ensuring transparency and ease in
-            expense tracking.
-          </p>
-          <div className="flex justify-center gap-10 pt-5">
-            <div>
-              <Link
-                to="https://github.com/MaxAnii/Share-Expense"
-                target="_blank"
-                className="text-[#ff5d56] "
-              >
-                Github
-              </Link>
-            </div>
-            <div>
-              <Link
-                to="https://shareexpense.vercel.app"
-                target="_blank"
-                className="text-[#ff5d56] "
-              >
-                Live Demo
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="  md:pl-[10vw] md:pr-[10vw] lg:pt-[9vh] md:p-5 lg:overflow-hidden ">
-        <div className="md:pt-[10vh] lg:pt-0 lg:float-right lg:pl-5 px-3 pt-5">
-          <div className="" data-aos="zoom-in">
-            <Image
-              isBlurred
-              src={projectmanager}
-              className="lg:w-[40vw]"
-            ></Image>
-          </div>
-        </div>
-        <div className=" md:pl-10 pl-3 pt-5 lg:w-[40vw] lg:pt-0 lg:pl-0">
-          <h3 className="text-3xl text-center md:text-left  md:p-0 w-auto ">
-            ProjectHarbor
-          </h3>
-          <p className="pt-5 text-center md:text-left text-xl">
-            <b> Technologies :</b> React JS, Bootstrap, Node JS, PostgreSQL,
-            Express, S3. <br></br>This project facilitates efficient project
-            management within a college ecosystem, enabling college
-            administrators, HODs, professors, and students to collaborate
-            seamlessly. It streamlines mentor selection, project approval, and
-            project finalization processes, while also providing hierarchical
-            visibility of ongoing projects tailored to each role.
-          </p>
-          <div className="flex justify-center gap-10 pt-5">
-            <div>
-              <Link
-                to="https://github.com/MaxAnii/ProjectHarbor"
-                target="_blank"
-                className="text-[#ff5d56] "
-              >
-                Github
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="lg:grid lg:grid-cols-2 md:pl-[10vw] md:pr-[10vw] pt-[9vh] p-5">
-        <div className="md:pt-[10vh] lg:pt-0">
-          <div className="" data-aos="zoom-in">
-            <Image isBlurred src={checkYourHistory}></Image>
-          </div>
-        </div>
-        <div className=" md:pl-10 pl-3 pt-5 ">
-          <h3 className="text-3xl text-center md:text-left  md:p-0 w-auto ">
-            Check Your History
-          </h3>
-          <p className="pt-5 text-center md:text-left text-xl">
-            <b>Technologies :</b> React JS, Chrome API<br></br> Chromium-based
-            browsers extension to access your history without leaving your
-            active browser tab and allows you to delete the history of a
-            specific site and you can see the top 10 most visited site in 3
-            months
-          </p>
-          <div className="flex justify-center gap-10 pt-5">
-            <div>
-              <Link
-                to="https://github.com/MaxAnii/Web-History-Extension"
-                target="_blank"
-                className="text-[#ff5d56] "
-              >
-                Github
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
+      {projectDetails.map((elem, index) => {
+        let temp = imageOrder;
+        imageOrder = descriptionOrder;
+        descriptionOrder = temp;
+        return (
+          <ProjectContainer
+            key={index}
+            {...elem}
+            imageOrder={imageOrder}
+            descriptionOrder={descriptionOrder}
+          ></ProjectContainer>
+        );
+      })}
     </div>
   );
 };
