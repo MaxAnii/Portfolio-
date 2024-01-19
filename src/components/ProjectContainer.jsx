@@ -2,23 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Image } from "@nextui-org/react";
 const ProjectContainer = (props) => {
+  console.log(props.descriptionOrder, props.imageOrder);
   return (
     <>
       <div className="md:pl-[10vw] md:pr-[10vw] lg:pt-[9vh] md:p-5 lg:overflow-hidden lg:flex">
         <div
-          className={
-            "md:pt-[10vh] lg:pt-0 lg:pl-5 px-3 pt-5 " + `lg:${props.imageOrder}`
-          }
+          className={`md:pt-[10vh] lg:pt-0 lg:pl-5 px-3 pt-5 lg:order-${props.imageOrder}`}
         >
           <div className="" data-aos="zoom-in">
             <Image isBlurred src={props.image} className="lg:w-[40vw]"></Image>
           </div>
         </div>
         <div
-          className={
-            "md:pl-10 pl-3 pt-5 lg:w-[40vw] lg:pt-0" +
-            `lg:${props.descriptionOrder}`
-          }
+          className={`md:pl-10 pl-3 pt-5 lg:w-[40vw] lg:pt-0 lg:order-${props.descriptionOrder}`}
         >
           <h3 className="text-3xl text-center md:text-left md:p-0 w-auto">
             {props.projectName}
