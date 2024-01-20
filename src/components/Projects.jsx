@@ -10,6 +10,23 @@ const Projects = () => {
   let descriptionOrder = 2;
   const [projectDetails, setProjectDetails] = useState([
     {
+      projectName: "Tweet EveryDay",
+      image: techNew,
+      description:
+        " Stay ahead with automated tweets delivering the freshest tech news right to your feed. From groundbreaking discoveries to industry trends, I've got you covered.Plus, enjoy the convenience of timely updates! TechNews Automate tweets the latest tech news every 4 hours, ensuring you stay in the loop effortlessly.",
+      technologies: " Python, tweepy, newsapi",
+      github: "https://github.com/MaxAnii/Tweet_EveryDay",
+      liveDemo: "https://twitter.com/__TechNews",
+    },
+    {
+      projectName: "Check Your History",
+      image: checkYourHistory,
+      description:
+        "Chromium-based browsers extension to access your history without leaving your active browser tab and allows you to delete the history of a specific site and you can see the top 10 most visited site in 3 months",
+      technologies: " React JS, Chrome API.",
+      github: "https://github.com/MaxAnii/Web-History-Extension",
+    },
+    {
       projectName: "Share Expense",
       image: shareexpense,
       description:
@@ -26,23 +43,6 @@ const Projects = () => {
         "This project facilitates efficient project management within a college ecosystem, enabling college administrators, HODs, professors, and students to collaborate seamlessly. It streamlines mentor selection, project approval, and project finalization processes, while also providing hierarchical visibility of ongoing projects tailored to each role.",
       technologies: "  React JS, Bootstrap, Node JS, PostgreSQL, Express, S3.",
       github: "https://github.com/MaxAnii/ProjectHarbor",
-    },
-    {
-      projectName: "Check Your History",
-      image: checkYourHistory,
-      description:
-        "Chromium-based browsers extension to access your history without leaving your active browser tab and allows you to delete the history of a specific site and you can see the top 10 most visited site in 3 months",
-      technologies: " React JS, Chrome API.",
-      github: "https://github.com/MaxAnii/Web-History-Extension",
-    },
-    {
-      projectName: "Tweet EveryDay",
-      image: techNew,
-      description:
-        " Stay ahead with automated tweets delivering the freshest tech news right to your feed. From groundbreaking discoveries to industry trends, I've got you covered.Plus, enjoy the convenience of timely updates! TechNews Automate tweets the latest tech news every 4 hours, ensuring you stay in the loop effortlessly.",
-      technologies: " Python, tweepy, newsapi",
-      github: "https://github.com/MaxAnii/Tweet_EveryDay",
-      liveDemo: "https://twitter.com/__TechNews",
     },
   ]);
   return (
