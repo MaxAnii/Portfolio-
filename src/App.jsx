@@ -2,17 +2,22 @@ import { React, useEffect, useState } from "react";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
-
+import Loader from "./components/Loader";
 function App() {
+  const [loader, setLoader] = useState(true);
+
   useEffect(() => {
     AOS.init();
+    setTimeout(() => setLoader(false), 1500);
   }, []);
   return (
     <Routes>
-      <Route path="/" element={<Home></Home>}></Route>
-      {/* <Route path="/home" element={}></Route> */}
+      <Route
+        path="/"
+        element={loader ? <Loader></Loader> : <Home></Home>}
+      ></Route>
     </Routes>
   );
 }
