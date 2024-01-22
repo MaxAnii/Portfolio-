@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     AOS.init();
-    setTimeout(() => setLoader(false), 1500);
+    setTimeout(() => setLoader(false), 2000);
   }, []);
   return (
     <Routes>
