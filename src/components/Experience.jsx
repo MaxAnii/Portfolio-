@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Divider } from "@nextui-org/react";
-import { Link } from "react-router-dom";
+import ExperienceContainer from "./ExperienceContainer";
 const Experience = () => {
+  const [experience, setExperience] = useState([
+    {
+      orgName: "Karnataka State Pollution Control Board | Mangalore, Karnataka",
+      desgination: "Software Developer",
+      period: "Aug 2023 - Present",
+      description:
+        "• Led development of user-friendly data management system for industries. Enabled input of crucial environmental metrics, including water and biodegradable waste. Designed advanced filtering options, resulting in a 30% reduction in time spent on data retrieval. Incorporated seamless Excel export functionality, improving user experience and productivity by 20%.",
+      technologies:
+        " Bootstrap, React JS, Node JS, Electron JS, PostgreSQL, Express Framework and RESTful services.",
+    },
+    {
+      orgName: "Varcons Technologies Pvt Ltd | Mangalore, Karnataka",
+      desgination: "Full Stack Web Developer",
+      period: "Nov 2022 - Dec 2022",
+      description:
+        "• I led a team of 5 in the creation of the 'Leisure Square' café website.Managed team projects and developed a responsive website, fulfilling project deadlines with a 95% on-time rate.",
+      technologies: "  HTML, CSS, JavaScript, Bootstrap.",
+      github: "https://github.com/MaxAnii/LeisureSquare",
+      liveDemo: "https://maxanii.github.io/LeisureSquare/",
+    },
+  ]);
   return (
     <div>
       <div className="">
@@ -20,67 +41,23 @@ const Experience = () => {
       <div className="pt-[9vh] md:pl-[10vw] md:pr-[10vw] px-5">
         <div className="flex ">
           <div>
-            <Divider className="ml-[-5vw]" orientation="vertical"></Divider>
+            <Divider className="ml-[-15px]" orientation="vertical"></Divider>
           </div>
           <div>
             <ul className="list-disc ">
-              <li className="py-5">
-                <div>
-                  <h3 className="text-3xl mb-5">
-                    Karnataka State Pollution Control Board
-                    <span className="text-right"> | Present</span>
-                  </h3>
-                  <p className="text-xl">
-                    <div className="mb-3 ">
-                      <b> Technologies :</b> React JS, Bootstrap, Node JS,
-                      PostgreSQL, Express Framework and RESTful services.
-                    </div>
-                      As a software engineer, my job is to design software
-                      that the KSPCB can use to handle all industrial-related
-                      details.
-                  </p>
-                </div>
-              </li>
-              <Divider className="my-4" />
-              <li>
-                <div>
-                  <h3 className="text-3xl mb-5">
-                    Varcons Technologies Pvt Ltd
-                  </h3>
-                  <p className="text-xl">
-                    <div className="mb-3">
-                      <b> Technologies :</b> HTML, CSS, JavaScript, Bootstrap.
-                    </div>
-                    During my internship at Varcons Technologies Pvt Ltd from, I
-                    led a dynamic 5-member team in the development of "Leisure
-                    Square," an extensive website template for a cafe. My role
-                    encompassed spearheading collaborative efforts, overseeing
-                    interactive web page creation, ensuring seamless alignment
-                    between design briefs and client specifications for a
-                    captivating online presentation.
-                  </p>
-                  <div className="justify-center flex gap-8 my-5 ">
-                    <div>
-                      <Link
-                        to="https://github.com/MaxAnii/LeisureSquare"
-                        target="_blank"
-                        className="text-[#ff5d56] "
-                      >
-                        Github
-                      </Link>
-                    </div>
-                    <div>
-                      <Link
-                        to="https://maxanii.github.io/LeisureSquare/"
-                        target="_blank"
-                        className="text-[#ff5d56] "
-                      >
-                        Live Demo
-                      </Link>
-                    </div>
+              {experience.map((elem, index) => {
+                return (
+                  <div key={index}>
+                    <ExperienceContainer {...elem}></ExperienceContainer>
+                    {index !== experience.length - 1 && (
+                      <Divider
+                        className="ml-[-15px]"
+                        orientation="horizontal"
+                      ></Divider>
+                    )}
                   </div>
-                </div>
-              </li>
+                );
+              })}
             </ul>
           </div>
         </div>
