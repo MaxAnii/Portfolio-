@@ -10,7 +10,7 @@
  
 }
 .profile-photo{
-  background:url("../src/assets/Profile/Profile1.png") no-repeat;
+  background:url("../src/assets/Profile/background.png") no-repeat;
    background-position-x:right;
   background-position-y: 3vh;
    background-size: 120vh ;  
