@@ -1,11 +1,11 @@
 .fname{
-  font-family: 'Zeyada', cursive;
+
     font-weight: bold;
 
 }
 .about{
   color: #ff5d56;
-  font-family: 'Berkshire Swash', cursive;
+  font-family: 'Berkshire Swash';
   font-weight: bold;
  
 }
@@ -133,4 +133,4 @@ display: none;
       transform: translate(0, -1em) rotate(-225deg)
     }
   }
-     
+    

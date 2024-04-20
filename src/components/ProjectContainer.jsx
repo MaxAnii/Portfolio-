@@ -14,19 +14,17 @@ const ProjectContainer = (props) => {
 
 	return (
 		<>
-			<div className="md:pl-[10vw] md:pr-[10vw] lg:pt-[9vh] md:p-5 lg:overflow-hidden lg:flex">
-				<div className={`md:pt-[10vh] lg:pt-0 lg:pl-5 px-3 pt-5 ${imageOrder}`}>
+			<div className="md:px-[5vw] lg:mt-[9vh] md:p-5 lg:flex items-center my-[90px] md:my-0 px-3">
+				<div className={` lg:pt-0 lg:pl-5 px-3 pt-5 ${imageOrder}`}>
 					<div className="" data-aos="zoom-in">
 						<Image isBlurred src={props.image} className="lg:w-[40vw]"></Image>
 					</div>
 				</div>
-				<div
-					className={`md:pl-10 pl-3 pt-5 lg:w-[40vw] lg:pt-0 ${descriptionOrder}`}
-				>
-					<h3 className="text-3xl text-center md:text-left md:p-0 w-auto">
+				<div className={`md:pl-10 pl-3  lg:w-[40vw]  ${descriptionOrder}`}>
+					<h3 className="text-3xl text-center md:text-left mt-5">
 						{props.projectName}
 					</h3>
-					<p className="pt-5 text-center md:text-left text-xl">
+					<p className="pt-5  md:text-xl text-lg font-light">
 						<b>Technologies :</b> {props.technologies}
 						<br></br>
 						{props.description}
