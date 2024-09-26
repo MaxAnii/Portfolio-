@@ -6,7 +6,7 @@ const Experience = () => {
 		{
 			orgName: "Elogixa Pvt. Lmt. | Mangalore, Karnataka",
 			desgination: "Software Developer Intern",
-			period: "April 2024 - Present",
+			period: "April 2024 - June 2024",
 			description: `• As an intern at Elogixa, I contribute to the design and development of our Transportation Management System (TMS)
         using the latest technology stack.
         `,
